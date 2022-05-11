@@ -1,0 +1,46 @@
+<!DOCTYPEhtml>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>project 1</title>
+    </head>
+    
+    <body>
+        
+            <div class="my" style="background-color:black; color: white;width:300px;height:auto;">
+            <h1 style="text-align:center;">Unit Converter </h1>
+            <label>feet</label>
+            <input type="text" id="feet" name="feet" style="font-size:20px;margin:10px;"/><br><br>
+            <button onclick="hello()" style="background-color:red;color:white; margin: 50px;font-size: 20px;">Conver into cm</button><br><br><br>
+            <p id="demo" style="color:yellow;font-size:24px; text-align: center;"></p>
+            </div>
+    <script>
+     
+    function hello() {
+    
+          var a = document.getElementById("feet").value;
+          if(a>0){
+        
+          
+          var b = document.getElementById("demo").innerHTML=a*30.48+"cm";
+          }
+        else if(a < 0)
+        {
+            alert("please enter a feet value > 0");
+           
+
+        }
+      
+       else {
+
+       alert("pls enter a valid no"); 
+       
+       }    
+    }
+
+</script>
+
+</body>
+</html>
